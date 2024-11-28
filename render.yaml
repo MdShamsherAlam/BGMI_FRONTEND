@@ -10,7 +10,4 @@ services:
         value: production
       - key: PORT
         value: 10000 # Optional, Render assigns a default PORT dynamically
-    disk:
-      - name: persistent-disk
-        mountPath: /data
-        sizeGB: 1 # Adjust based on your app's requirements
+   
