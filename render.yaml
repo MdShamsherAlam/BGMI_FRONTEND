@@ -1,0 +1,16 @@
+services:
+  - name: bgmi_frontend
+    type: web
+    env: node
+    plan: free # Change to a paid plan if necessary
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000 # Optional, Render assigns a default PORT dynamically
+    disk:
+      - name: persistent-disk
+        mountPath: /data
+        sizeGB: 1 # Adjust based on your app's requirements
