@@ -4,8 +4,8 @@
 	"author": "Sachin Kumar <softwaredevelopersachin@gmail.com>",
 	"private": true,
 	"scripts": {
-		  "start": "nodemon app.js",
-                 "dev": "nodemon app.js"
+		  "start": "node app.js",
+                 "dev": "node app.js"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
