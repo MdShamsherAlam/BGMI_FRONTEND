@@ -3,11 +3,10 @@ services:
     type: web
     env: node
     plan: free # Change to a paid plan if necessary
-     buildCommand: npm install --production=false
+    buildCommand: npm install --production=false
     startCommand: node app.js
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 10000 # Optional, Render assigns a default PORT dynamically
-   
